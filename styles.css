@@ -1,6 +1,6 @@
 header {
-    background-color: #780000;
-    padding-top: 25px; 
+    background-color: #1a936f;
+    padding-top: 15px; 
 }
 
 body {
@@ -32,5 +32,5 @@ ul {
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: #1a936f;
   }
