@@ -38,7 +38,9 @@ ul {
   .headshot {
     width: 25%;
     height: 25%;
-    border: 1px solid #114b5f;
+    border: 4px solid #114b5f;
     border-radius: 4px;
     float: left;
+    padding-top: 15px;
+    padding-right: 15px;
   }
