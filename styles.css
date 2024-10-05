@@ -34,3 +34,8 @@ ul {
   li a:hover {
     background-color: #1a936f;
   }
+
+  .headshot {
+    width: 50px;
+    height: 60px;
+  }
