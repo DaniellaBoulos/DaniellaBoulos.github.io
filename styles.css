@@ -1,7 +1,18 @@
 header {
     background-color: #780000;
+    padding-top: 25px; 
+}
+
+body {
+    background-color: #f3e9d2;
 }
 
 h1 {
     text-align: center;
+}
+
+.navbar {
+    float: none;
+    position: absolute;
+    background-color: #114b5f;
 }
