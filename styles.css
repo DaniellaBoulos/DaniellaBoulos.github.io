@@ -38,8 +38,12 @@ ul {
   .headshot {
     width: 25%;
     height: 25%;
-    border-radius: 50%;
+    border-radius: 40%;
     margin: auto;
     padding-top: 15px;
     padding-right: 15px;
+  }
+
+  #about {
+    float: right;
   }
