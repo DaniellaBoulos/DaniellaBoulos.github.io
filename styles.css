@@ -44,5 +44,5 @@ ul {
   }
 
   #about {
-    float: right;
+    display: inline-block;
   }
