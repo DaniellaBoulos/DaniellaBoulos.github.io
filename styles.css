@@ -39,6 +39,10 @@ ul {
     width: 25%;
     height: 25%;
     border-radius: 20px;
-    padding-top: 5%;
+    padding-top: 3%;
     float: left;
+  }
+
+  #about {
+    padding-left: 10px;
   }
