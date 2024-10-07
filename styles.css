@@ -41,10 +41,8 @@ ul {
     border-radius: 20px;
     margin: auto;
     float: left;
-    padding-right: 15px;
   }
 
   .about {
     display: inline-block;
-    padding-left: 15px;
   }
