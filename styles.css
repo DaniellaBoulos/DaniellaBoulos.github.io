@@ -38,12 +38,12 @@ ul {
   .headshot {
     width: 25%;
     height: 25%;
-    border-radius: 20px;
+    border-radius: 30px;
     padding-top: 5px;
     float: left;
   }
 
   .about {
-    padding-left: 10px;
+    float: center;
     padding-top: 5px;
   }
