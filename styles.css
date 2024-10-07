@@ -39,10 +39,6 @@ ul {
     width: 25%;
     height: 25%;
     border-radius: 20px;
-    margin: auto;
+    padding-top: 5%;
     float: left;
-  }
-
-  .about {
-    display: inline-block;
   }
