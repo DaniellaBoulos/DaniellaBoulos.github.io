@@ -44,6 +44,6 @@ ul {
   }
 
   .about {
-    float: center;
     padding-top: 5px;
+    text-align: center;
   }
