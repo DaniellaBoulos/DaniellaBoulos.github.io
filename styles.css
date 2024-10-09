@@ -11,7 +11,7 @@ h1 {
     text-align: center;
 }
 
-ul {
+#nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,11 +19,11 @@ ul {
     background-color: #114b5f;
   }
   
-  li {
+  .nav-link {
     float: left;
   }
   
-  li a {
+  .nav-link a {
     display: block;
     color: white;
     text-align: center;
@@ -31,7 +31,7 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
+  .nav-link a:hover {
     background-color: #1a936f;
   }
 
