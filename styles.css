@@ -21,6 +21,7 @@ h1 {
   
   .nav-link {
     float: left;
+    color: #f3e9d2;
   }
   
   .nav-link a {
@@ -51,5 +52,13 @@ h1 {
   }
 
   .icons {
-    font-size: 15px;
+    width: 15px;
+    height: 15px;
   }
+
+  @media (max-width: 600px) {
+    .icons {
+        width: 8px;
+        height: 8px;
+    }
+}
