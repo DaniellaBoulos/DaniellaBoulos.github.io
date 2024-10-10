@@ -1,6 +1,7 @@
 header {
     background-color: #1a936f;
     padding-top: 15px; 
+    color: #f3e9d2;
 }
 
 body {
@@ -26,7 +27,7 @@ h1 {
   
   .nav-link a {
     display: block;
-    color: white;
+    color: #f3e9d2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -61,4 +62,27 @@ h1 {
         width: 8px;
         height: 8px;
     }
+}
+
+#projects {
+  padding: 30px;
+}
+
+.project {
+  padding: 20px;
+  text-align: center;
+  border: 3px solid #114b5f;
+  width: 300px;
+  height: 175px;
+  background-color: #f3e9d2;
+  box-shadow: -5px 5px 5px;
+}
+
+button {
+  background-color: #1a936f;
+  color: #f3e9d2;
+}
+
+button:hover {
+  background-color: #114b5f;
 }
