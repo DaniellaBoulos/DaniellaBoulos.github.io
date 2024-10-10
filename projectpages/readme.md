@@ -1,1 +1,1 @@
-This folder contains the various pages related to my projects involved in my website.
+This folder contains the various pages and write-ups related to my projects.
