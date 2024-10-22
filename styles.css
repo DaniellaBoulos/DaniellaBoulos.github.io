@@ -71,7 +71,8 @@ footer {
 }
 
 #projects {
-  padding: 30px;
+  padding: 15px;
+  display: inline-block;
 }
 
 .project {
