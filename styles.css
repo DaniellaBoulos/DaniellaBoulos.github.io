@@ -59,16 +59,9 @@ footer {
   }
 
   .icons {
-    width: 15px;
-    height: auto;
+    width: 25%;
+    height: 25%;
   }
-
-  @media (max-width: 600px) {
-    .icons {
-        width: 8px;
-        height: 8px;
-    }
-}
 
 #projects {
   padding: 15px;
