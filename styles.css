@@ -102,11 +102,21 @@ button:hover {
   background-color: #f3e9d2;
   box-shadow: -5px 5px 5px;
   text-align: center;
-  width: 450px;
-  height: 500px;
+  width: 475px;
+  height: 400px;
+  justify-content: center;
 }
 
 .eats {
-  width: 50%;
+  width: 65%;
   height: auto;
+}
+
+/* Skills Page CSS */
+#skills {
+  display: grid;
+  grid-template-columns: auto auto; /* Two columns */
+  gap: 20px; /* Adds space between projects */
+  justify-content: space-evenly;
+  padding: 20px;
 }
