@@ -68,12 +68,13 @@ footer {
 /* Projects Page CSS */
 #projects {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
-  grid-gap: 20px; /* Adds space between projects */
+  grid-template-columns: auto auto; /* Two columns */
+  gap: 20px; /* Adds space between projects */
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
 .project {
-  padding: 20px;
   text-align: center;
   border: 3px solid #114b5f;
   width: 300px;
@@ -101,9 +102,11 @@ button:hover {
   background-color: #f3e9d2;
   box-shadow: -5px 5px 5px;
   text-align: center;
+  width: 450px;
+  height: 500px;
 }
 
 .eats {
-  width: 75%;
+  width: 50%;
   height: auto;
 }
