@@ -1,3 +1,4 @@
+/* Overall CSS */
 header {
     background-color: #1a936f;
     padding-top: 15px; 
@@ -43,6 +44,12 @@ footer {
     background-color: #1a936f;
   }
 
+  .icons {
+    width: 25%;
+    height: 25%;
+  }
+
+/* About Me page CSS */
   .headshot {
     width: 25%;
     height: 25%;
@@ -58,14 +65,11 @@ footer {
     padding-left: 5px;
   }
 
-  .icons {
-    width: 25%;
-    height: 25%;
-  }
-
+/* Projects Page CSS */
 #projects {
-  padding: 15px;
-  display: inline;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-gap: 20px; /* Adds space between projects */
 }
 
 .project {
@@ -90,16 +94,16 @@ button:hover {
   border-color: #1a936f;
 }
 
+/* Restaurant Website CSS */
 .writeup {
   padding: 20px;
   border: 3px solid #114b5f;
-  width: 50%;
-  height: auto;
   background-color: #f3e9d2;
   box-shadow: -5px 5px 5px;
+  text-align: center;
 }
 
 .eats {
-  width: 50%;
+  width: 75%;
   height: auto;
 }
