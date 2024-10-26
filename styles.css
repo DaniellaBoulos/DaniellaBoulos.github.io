@@ -70,15 +70,15 @@ footer {
   display: grid;
   grid-template-columns: auto auto; /* Two columns */
   gap: 20px; /* Adds space between projects */
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 20px;
 }
 
 .project {
   text-align: center;
   border: 3px solid #114b5f;
-  width: 300px;
-  height: 225px;
+  width: 45%; /* Creates responsive box */
+  height: auto;
   background-color: #f3e9d2;
   box-shadow: -5px 5px 5px;
 }
@@ -97,18 +97,17 @@ button:hover {
 
 /* Restaurant Website CSS */
 .writeup {
-  padding: 20px;
+  padding-top: 20px;
   border: 3px solid #114b5f;
   background-color: #f3e9d2;
   box-shadow: -5px 5px 5px;
   text-align: center;
-  width: 475px;
-  height: 400px;
-  justify-content: center;
+  width: 350px;
+  height: 325px;
 }
 
 .eats {
-  width: 65%;
+  width: 75%;
   height: auto;
 }
 
@@ -116,7 +115,7 @@ button:hover {
 #skills {
   display: grid;
   grid-template-columns: auto auto; /* Two columns */
-  gap: 20px; /* Adds space between projects */
+  gap: 10px; /* Adds space between projects */
   justify-content: space-evenly;
   padding: 20px;
 }
