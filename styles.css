@@ -69,8 +69,8 @@ footer {
 #projects {
   display: grid;
   grid-template-columns: auto auto; /* Two columns */
-  gap: 20px; /* Adds space between projects */
-  justify-content: space-around;
+  gap: 10px; /* Adds space between projects */
+  justify-content: space-evenly;
   padding: 20px;
 }
 
