@@ -85,6 +85,10 @@ body {
   header, footer {
     text-align: center;
   }
+
+  .headshot {
+    height: auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -94,6 +98,10 @@ body {
 
   section {
     margin-bottom: 20px;
+  }
+
+  .headshot {
+    height: auto;
   }
 }
 
@@ -144,30 +152,30 @@ h2 {
 
 .project {
   text-align: center;
-  border: 3px solid #114b5f;
+  border: 3px solid #303437;
   width: 45%; /* Creates responsive box */
   height: auto;
-  background-color: #f3e9d2;
+  background-color: #d9ced6;
   box-shadow: -5px 5px 5px;
 }
 
 button {
-  background-color: #1a936f;
-  color: #f3e9d2;
+  background-color: #4f0000;
+  color: #d9ced6;
   width: 30%;
   height: 12%;
 }
 
 button:hover {
-  background-color: #114b5f;
-  border-color: #1a936f;
+  background-color: #303437;
+  border-color: #4f0000;
 }
 
 /* Restaurant Website CSS */
 .writeup {
   padding-top: 20px;
-  border: 3px solid #114b5f;
-  background-color: #f3e9d2;
+  border: 3px solid #303437;
+  background-color: #d9ced6;
   box-shadow: -5px 5px 5px;
   text-align: center;
   width: 350px;
