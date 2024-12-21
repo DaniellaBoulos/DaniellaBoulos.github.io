@@ -1,69 +1,120 @@
 /* Overall CSS */
 header {
-    background-color: #1a936f;
-    padding-top: 15px; 
-    color: #f3e9d2;
+  background-color: #4f0000;
+  padding-top: 0.5rem; 
+  color: #d9ced6;
+  width: 100%;
 }
 
 body {
-    background-color: #f3e9d2;
+  background-color: #d9ced6;
 }
 
-h1 {
-    text-align: center;
-}
-
-footer {
-  background-color: #1a936f;
-  color: #f3e9d2;
-  padding: none;
+header h1 {
+  text-align: center;
 }
 
 #nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #114b5f;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #303437;
+}
   
-  .nav-link {
-    float: left;
-    color: #f3e9d2;
-  }
+.nav-link a {
+  display: block;
+  float: left;
+  color: #d9ced6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
   
-  .nav-link a {
-    display: block;
-    color: #f3e9d2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .nav-link a:hover {
-    background-color: #1a936f;
+.nav-link a:hover {
+  background-color: #4f0000;
+  color: #d9ced6;
+}
+
+/* Footer */
+.footer {
+  background-color: #4f0000;
+  color: #d9ced6;
+  padding: 0.5rem;
+  display: block;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-links p {
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: #d9ced6;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #303437;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .icons {
-    width: 25%;
-    height: 25%;
+  header, footer {
+    text-align: center;
   }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    margin-bottom: 20px;
+  }
+}
 
 /* About Me page CSS */
-  .headshot {
-    width: 25%;
-    height: 25%;
-    border-radius: 30px;
-    padding-top: 5px;
-    float: left;
-    padding-right: 20px;
-  }
+.headshot {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  padding: 15px;
+  display: inline-flex;
+}
 
-  .about {
-    padding-top: 5px;
-    text-align: left;
-    padding-left: 5px;
-  }
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #303437;
+}
+
+.about div {
+  padding-top: 5px;
+  text-align: center;
+  padding-left: 5px;
+}
+
+.about p {
+  font-size: 1.25rem;
+}
+
+h2 {
+  text-align: center;
+  color: #4f0000;
+  font-size: 1.75rem;
+}
 
 /* Projects Page CSS */
 #projects {
