@@ -1,23 +1,27 @@
 /* Overall CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background-color: #4f0000;
-  padding-top: 0.5rem; 
+  padding: 0.1rem 0; 
   color: #d9ced6;
   width: 100%;
 }
 
-body {
-  background-color: #d9ced6;
-}
-
 header h1 {
   text-align: center;
+  padding: 1.5rem;
+  font-size: 2.25rem;
 }
 
 #nav {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  width: 100%;
   overflow: hidden;
   background-color: #303437;
 }
@@ -29,6 +33,7 @@ header h1 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 1rem;
 }
   
 .nav-link a:hover {
@@ -36,24 +41,32 @@ header h1 {
   color: #d9ced6;
 }
 
+body {
+  background-color: #d9ced6;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* Footer */
 .footer {
   background-color: #4f0000;
   color: #d9ced6;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   display: block;
   position: relative;
-  bottom: 0;
   width: 100%;
+  margin-top: auto;
 }
 
-.social-links p {
-  margin-right: 10px;
+.footer p {
+  padding: 0.3rem 1rem;
 }
 
 .social-links a {
   color: #d9ced6;
-  margin-right: 10px;
+  margin-right: 0.5rem;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -86,24 +99,27 @@ header h1 {
 
 /* About Me page CSS */
 .headshot {
-  width: 20%;
-  height: 20%;
+  width: 75%;
+  height: 75%;
   border-radius: 50%;
-  padding: 15px;
-  display: inline-flex;
+  padding: 1.5rem;
+  margin-left: 5rem;
 }
 
 .about {
-  display: flex;
-  justify-content: center;
   align-items: center;
   color: #303437;
+  display: grid;
+  grid-template-columns: auto auto; /* Two columns */
+  gap: 0.5rem; /* Adds space between projects */
+  justify-content: space-evenly;
 }
 
 .about div {
-  padding-top: 5px;
+  padding-top: 1rem;
   text-align: center;
-  padding-left: 5px;
+  padding-right: 1.5rem;
+  margin-right: 3.5rem;
 }
 
 .about p {
@@ -166,7 +182,16 @@ button:hover {
 #skills {
   display: grid;
   grid-template-columns: auto auto; /* Two columns */
-  gap: 10px; /* Adds space between projects */
+  gap: 2rem; /* Adds space between projects */
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#skills h2 {
+  padding-bottom: 1rem;
+}
+
+#skills li {
+  margin-left: 2rem;
 }
