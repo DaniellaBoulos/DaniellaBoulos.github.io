@@ -88,6 +88,7 @@ body {
 
   .headshot {
     height: auto;
+    max-width: 70%;
   }
 }
 
@@ -102,6 +103,7 @@ body {
 
   .headshot {
     height: auto;
+    max-width: 50%;
   }
 }
 
@@ -144,26 +146,34 @@ h2 {
 /* Projects Page CSS */
 #projects {
   display: grid;
-  grid-template-columns: auto auto; /* Two columns */
-  gap: 10px; /* Adds space between projects */
+  grid-template-columns: auto auto auto; /* Three columns */
   justify-content: space-evenly;
-  padding: 20px;
+  margin: 2rem 5.5rem;
 }
 
 .project {
   text-align: center;
   border: 3px solid #303437;
-  width: 45%; /* Creates responsive box */
+  width: 75%; /* Creates responsive box */
   height: auto;
   background-color: #d9ced6;
   box-shadow: -5px 5px 5px;
 }
 
+.project h3 {
+  padding-top: 1rem;
+}
+
+.project p {
+  padding: 1rem 0.5rem;
+}
+
 button {
   background-color: #4f0000;
   color: #d9ced6;
-  width: 30%;
-  height: 12%;
+  width: 35%;
+  height: 15%;
+  padding: 0.5rem;
 }
 
 button:hover {
@@ -173,13 +183,28 @@ button:hover {
 
 /* Restaurant Website CSS */
 .writeup {
-  padding-top: 20px;
+  padding: 1rem;
   border: 3px solid #303437;
   background-color: #d9ced6;
   box-shadow: -5px 5px 5px;
   text-align: center;
   width: 350px;
   height: 325px;
+}
+
+.writeup a {
+  background-color: #4f0000;
+  color: #d9ced6;
+  text-decoration: none;
+  border: 3px solid #303437;
+  border-radius: 15%;
+  padding: 0.5rem;
+}
+
+.writeup a:hover {
+  background-color: #303437;
+  color: #d9ced6;
+  border: 3px solid #4f0000;
 }
 
 .eats {
