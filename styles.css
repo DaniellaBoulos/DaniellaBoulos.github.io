@@ -97,7 +97,7 @@ body {
   }
 }
 
-/* About Me page CSS */
+/* Home page CSS */
 .headshot {
   width: 75%;
   height: 75%;
@@ -130,6 +130,7 @@ h2 {
   text-align: center;
   color: #4f0000;
   font-size: 1.75rem;
+  padding-bottom: 1rem;
 }
 
 /* Projects Page CSS */
