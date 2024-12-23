@@ -151,29 +151,38 @@ h2 {
   margin: 2rem 5.5rem;
 }
 
-.project {
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-4 {
   text-align: center;
   border: 3px solid #303437;
-  width: 75%; /* Creates responsive box */
-  height: auto;
   background-color: #d9ced6;
   box-shadow: -5px 5px 5px;
+  height: auto;
+  width: 90%; /* Creates responsive box */
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.project h3 {
-  padding-top: 1rem;
+.col-4 h3 {
+  padding: 0.5rem;
 }
 
-.project p {
-  padding: 1rem 0.5rem;
+.col-4 p {
+  padding: 0.5rem;
 }
 
 button {
   background-color: #4f0000;
   color: #d9ced6;
-  width: 35%;
+  width: 32%;
   height: 15%;
   padding: 0.5rem;
+  border-radius: 10%;
 }
 
 button:hover {
