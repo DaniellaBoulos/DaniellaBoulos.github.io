@@ -88,7 +88,11 @@ body {
 
   .headshot {
     height: auto;
-    max-width: 90%;
+    max-width: 75%;
+  }
+
+  #projects {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
@@ -103,7 +107,11 @@ body {
 
   .headshot {
     height: auto;
-    max-width: 100%;
+    max-width: 50%;
+  }
+
+  #projects {
+    grid-template-columns: 1fr; /* Single column layout */
   }
 }
 
@@ -146,7 +154,7 @@ h2 {
 /* Projects Page CSS */
 #projects {
   display: grid;
-  grid-template-columns: auto auto auto; /* Three columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* creates responsive columns */
   justify-content: space-evenly;
   margin: 2rem 5.5rem;
 }
