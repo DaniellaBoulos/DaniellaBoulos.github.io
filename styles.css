@@ -91,7 +91,7 @@ body {
     max-width: 75%;
   }
 
-  #projects {
+  #projects, .autumn {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
@@ -110,7 +110,7 @@ body {
     max-width: 50%;
   }
 
-  #projects {
+  #projects, .autumn {
     grid-template-columns: 1fr; /* Single column layout */
   }
 }
@@ -201,9 +201,9 @@ button:hover {
 /* Restaurant Website CSS */
 .autumn {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* creates responsive columns */
   justify-content: space-evenly;
-  gap: 1rem;
+  gap: 2rem;
   margin: 2rem;
   text-align: center;
 }
@@ -223,6 +223,7 @@ button:hover {
   border: 3px solid #0c0c1e;
   border-radius: 15%;
   padding: 0.5rem;
+  margin: 1rem;
 }
 
 .autumn a:hover {
@@ -231,9 +232,15 @@ button:hover {
   border: 3px solid #4b0000;
 }
 
-.autumn img {
-  margin: 1rem;
-  width: 50%;
+#writeup img {
+  margin: 1.5rem;
+  width: 75%;
+  height: auto;
+}
+
+#repository img {
+  margin: 1.5rem;
+  width: 35%;
   height: auto;
 }
 
