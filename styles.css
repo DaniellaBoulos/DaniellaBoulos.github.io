@@ -88,7 +88,7 @@ body {
 
   .headshot {
     height: auto;
-    max-width: 75%;
+    max-width: 50%;
   }
 
   #projects, .autumn {
@@ -107,7 +107,7 @@ body {
 
   .headshot {
     height: auto;
-    max-width: 50%;
+    max-width: 30%;
   }
 
   #projects, .autumn {
@@ -129,7 +129,7 @@ body {
   color: #0c0c1e;
   display: grid;
   grid-template-columns: auto auto; /* Two columns */
-  gap: 0.5rem; /* Adds space between projects */
+  gap: 0.5rem; /* Adds space between columns */
   justify-content: space-evenly;
 }
 
@@ -181,21 +181,25 @@ h2 {
 }
 
 .col-4 p {
-  padding: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
-button {
+.row a {
   background-color: #4b0000;
   color: #f3e3e2;
   width: 32%;
   height: 15%;
   padding: 0.5rem;
   border-radius: 10%;
+  text-decoration: none;
 }
 
-button:hover {
+.row a:hover {
   background-color: #0c0c1e;
-  border-color: #4b0000;
+  color: #f3e3e2;
+  border: 3px solid #4b0000;
 }
 
 /* Restaurant Website CSS */
