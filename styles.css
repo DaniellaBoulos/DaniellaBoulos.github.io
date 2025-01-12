@@ -88,10 +88,10 @@ body {
 
   .headshot {
     height: auto;
-    max-width: 50%;
+    max-width: 45%;
   }
 
-  #projects, .autumn {
+  #projects, .autumn, .about, #skills {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
@@ -110,38 +110,39 @@ body {
     max-width: 30%;
   }
 
-  #projects, .autumn {
+  #projects, .autumn, .about, #skills {
     grid-template-columns: 1fr; /* Single column layout */
   }
 }
 
 /* Home page CSS */
-.headshot {
-  width: 75%;
-  height: 75%;
-  border-radius: 50%;
-  padding: 1.5rem;
-  margin-left: 5rem;
-}
-
 .about {
   align-items: center;
   color: #0c0c1e;
   display: grid;
-  grid-template-columns: auto auto; /* Two columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* creates responsive columns */
   gap: 0.5rem; /* Adds space between columns */
   justify-content: space-evenly;
 }
 
-.about div {
+.about img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.col-6 {
   padding-top: 1rem;
   text-align: center;
-  padding-right: 1.5rem;
-  margin-right: 3.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .about p {
   font-size: 1.25rem;
+  margin-right: 3rem;
 }
 
 h2 {
@@ -251,11 +252,21 @@ h2 {
 /* Skills Page CSS */
 #skills {
   display: grid;
-  grid-template-columns: auto auto; /* Two columns */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* creates responsive columns */
   gap: 2rem; /* Adds space between projects */
   justify-content: space-evenly;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+.multi-column-list ul {
+column-count: 2; /* Number of columns */
+column-gap: 1rem; /* Space between columns */
+list-style-position: inside; /* Keeps list style markers inside the column */
+}
+
+.multi-column-list li {
+  margin-bottom: 0.25rem;
 }
 
 #skills h2 {
