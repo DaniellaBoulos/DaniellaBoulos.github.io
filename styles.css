@@ -32,14 +32,14 @@ header {
 }
 
 .header-row img {
-  max-width: 15%;
+  max-width: 20%;
   height: auto;
   object-fit: cover;
   margin-right: 1rem;
 }
 
 .header-row h1 {
-  font-size: 3.75rem;
+  font-size: 4rem;
   font-family: EasyFont;
   color: #f3e3e2;
 }
@@ -74,29 +74,6 @@ nav ul li a:hover {
   padding: 1rem;
 }
 
-/*
-#nav {
-  list-style-type: none;
-  width: 100%;
-  overflow: hidden;
-  background-color: #0c0c1e;
-}
-  
-.nav-link a {
-  display: block;
-  float: left;
-  color: #f3e3e2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1rem;
-}
-  
-.nav-link a:hover {
-  background-color: #4b0000;
-  color: #f3e3e2;
-}
-*/
 body {
   background-color: #f3e3e2;
   height: 100%;
@@ -176,6 +153,10 @@ body {
 
   header {
     grid-template-columns: auto;
+  }
+
+  .header-row img {
+    max-width: 25%;
   }
 
   #projects, .autumn, .about, #skills {
@@ -343,4 +324,16 @@ h2 {
 
 #skills li {
   margin-left: 2rem;
+}
+
+/* Mac Malware Detection Page CSS */
+.construction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.construction img {
+  width: 50%;
+  height: auto;
 }
