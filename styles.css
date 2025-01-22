@@ -26,15 +26,16 @@ header {
 .header-row {
   display: flex;
   align-items: center; /* Vertically align image & title */
-  justify-content: left; /* Horizontally align the row */
+  justify-content: center;
   width: 100%;
   margin-bottom: 1.25rem;
 }
 
 .header-row img {
-  max-width: 20%;
+  max-width: 18%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain; /* Prevent distortion */
+  flex: 0 1 8%; /* Allow the image to take up 10% of the header's width */
   margin-right: 1rem;
 }
 
@@ -42,6 +43,9 @@ header {
   font-size: 4rem;
   font-family: EasyFont;
   color: #f3e3e2;
+  flex: 1 1 auto; /* Grow & shrink naturally */
+  text-align: left;
+  margin: 0;
 }
 
 /* Navigation styles */
@@ -119,10 +123,6 @@ body {
     text-align: center;
   }
 
-  header {
-    grid-template-columns: auto auto;
-  }
-
   .headshot {
     height: auto;
     max-width: 45%;
@@ -151,12 +151,9 @@ body {
     text-align: center;
   }
 
-  header {
-    grid-template-columns: auto;
-  }
-
   .header-row img {
-    max-width: 25%;
+    max-width: 45%;
+    height: auto;
   }
 
   #projects, .autumn, .about, #skills {
@@ -296,6 +293,7 @@ h2 {
   margin: 1.5rem;
   width: 35%;
   height: auto;
+  align-items: center;
 }
 
 /* Skills Page CSS */
