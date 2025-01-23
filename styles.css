@@ -26,26 +26,34 @@ header {
 .header-row {
   display: flex;
   align-items: center; /* Vertically align image & title */
-  justify-content: center;
+  justify-content: center; /* Horizontally center content */
   width: 100%;
   margin-bottom: 1.25rem;
+  position: relative; /* Enable absolute positioning inside */
+}
+
+.header-row a {
+  width: 6%;
+  height: auto;
+  margin-right: 1rem;
+  position: absolute; /* Position the logo on the left */
+  left: 1rem; /* Adjust distance from the left edge */
+  top: 50%; /* Vertically center the logo */
+  transform: translateY(-50%); /* Align the logo vertically */
 }
 
 .header-row img {
-  max-width: 18%;
+  width: 100%;
   height: auto;
-  object-fit: contain; /* Prevent distortion */
-  flex: 0 1 8%; /* Allow the image to take up 10% of the header's width */
-  margin-right: 1rem;
+  object-fit: contain;
 }
 
 .header-row h1 {
   font-size: 4rem;
   font-family: EasyFont;
   color: #f3e3e2;
-  flex: 1 1 auto; /* Grow & shrink naturally */
-  text-align: left;
-  margin: 0;
+  text-align: center;
+  margin: 1rem;
 }
 
 /* Navigation styles */
@@ -119,7 +127,24 @@ body {
     gap: 10px;
   }
 
-  header, footer, .col-6 {
+  .header-row {
+    justify-content: flex-start; /* Align content to the left */
+    flex-direction: row; /* Maintain row layout */
+    padding: 0 1rem;
+  }
+
+  .header-row a {
+    width: 8%; /* Increase logo size slightly */
+    left: 0.5rem; /* Adjust spacing for smaller screens */
+  }
+
+  .header-row h1 {
+    font-size: 3rem; /* Reduce title font size */
+    margin-left: 2rem; /* Space between logo and title */
+    text-align: left; /* Align text to the left */
+  }
+
+  footer, .col-6 {
     text-align: center;
   }
 
@@ -151,9 +176,22 @@ body {
     text-align: center;
   }
 
-  .header-row img {
-    max-width: 45%;
-    height: auto;
+  .header-row {
+    flex-direction: column; /* Stack logo and title vertically */
+    align-items: center; /* Center align all items */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .header-row a {
+    position: static; /* Remove absolute positioning for easier stacking */
+    margin-bottom: 1rem; /* Space below the logo */
+    width: 10%; /* Make logo larger for small screens */
+  }
+
+  .header-row h1 {
+    font-size: 2.5rem; /* Reduce title size for small screens */
+    margin: 0; /* Remove extra spacing */
+    text-align: center; /* Center-align text */
   }
 
   #projects, .autumn, .about, #skills {
@@ -249,7 +287,7 @@ h2 {
   border: 3px solid #4b0000;
 }
 
-/* Restaurant Website CSS */
+/* Autumn Eats & Mac Malware CSS */
 .autumn {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* creates responsive columns */
@@ -283,16 +321,21 @@ h2 {
   border: 3px solid #4b0000;
 }
 
-#writeup img {
+.writeup img {
   margin: 1.5rem;
   width: 75%;
   height: auto;
 }
 
-#repository img {
+.repository img {
   margin: 1.5rem;
   width: 35%;
   height: auto;
+  align-items: center;
+}
+
+.mmd {
+  justify-content: center;
   align-items: center;
 }
 
