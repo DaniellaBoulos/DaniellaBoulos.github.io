@@ -321,8 +321,12 @@ h2 {
   border: 3px solid #4b0000;
 }
 
+.autumn h3 {
+  font-size: 1.5rem;
+}
+
 .writeup img {
-  margin: 1.5rem;
+  margin: 1rem;
   width: 75%;
   height: auto;
 }
@@ -334,9 +338,9 @@ h2 {
   align-items: center;
 }
 
-.mmd {
-  justify-content: center;
-  align-items: center;
+#mmd {
+  width: 40%;
+  height: auto;
 }
 
 /* Skills Page CSS */
