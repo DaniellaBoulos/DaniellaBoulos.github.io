@@ -339,8 +339,10 @@ h2 {
 }
 
 #mmd {
-  width: 40%;
+  width: 75%;
   height: auto;
+  padding: 2rem;
+  margin: 1.75rem;
 }
 
 /* Skills Page CSS */
