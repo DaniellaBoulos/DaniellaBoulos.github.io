@@ -14,7 +14,7 @@
             <a href="index.html">
                 <img src="icons/logo3.png" alt="logo">
             </a>
-            <h1>Skills</h1>
+            <h1>Resume</h1>
         </div>
     </header>
 
@@ -25,39 +25,21 @@
         </ul>
     </nav>
 
-    <section id="skills">
-        <div col-6>
-            <div>
-                <h2>Coding Languages</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>MySQL</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-6">
-            <div>
-                <h2>Technical Skills</h2>
-                <div class="multi-column-list">
-                    <ul>
-                        <li>VMware</li>
-                        <li>Virtual Machines</li>
-                        <li>Kali Linux</li>
-                        <li>Metasploit</li>
-                        <li>Tenable Nessus</li>
-                        <li>Nmap</li>
-                        <li>Cisco Packet Tracer</li>
-                        <li>SpriteTree</li>
-                        <li>Jupyter Notebook</li>
-                        <li>K-Nearest Neighbors</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="resume-container">
+        <iframe id="resume" src="projectpages/Resume.pdf"></iframe>
+    </div>
+
+    <script>
+        function adjustPDFHeight() {
+            let rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize); // Get root font size in px
+            let newHeightRem = (window.innerHeight * 0.8) / rootFontSize; // Convert px to rem: 80% of viewport height
+            let minHeightRem = 25; // Minimum height in rem
+            document.getElementById("resume").style.height = Math.max(newHeightRem, minHeightRem) + "rem";
+        }
+
+        window.onload = adjustPDFHeight;
+        window.onresize = adjustPDFHeight;
+    </script>
 
     <!-- Footer -->
     <footer class="footer">
