@@ -26,7 +26,7 @@
     </nav>
 
     <div class="resume-container">
-        <iframe id="resume" src="projectpages/Resume.pdf"></iframe>
+        <iframe id="resume" src="projectpages/BoulosResume2.pdf"></iframe>
     </div>
 
     <script>
@@ -35,6 +35,13 @@
             let newHeightRem = (window.innerHeight * 0.8) / rootFontSize; // Convert px to rem: 80% of viewport height
             let minHeightRem = 25; // Minimum height in rem
             document.getElementById("resume").style.height = Math.max(newHeightRem, minHeightRem) + "rem";
+            let container = document.querySelector(".resume-container");
+            let iframe = document.getElementById("resume");
+        
+            let pdfAspectRatio = 1.414; // Standard A4 aspect ratio (height/width)
+
+            // Set height based on width to maintain aspect ratio
+            iframe.style.height = (container.clientWidth * pdfAspectRatio) + "px";
         }
 
         window.onload = adjustPDFHeight;
@@ -44,7 +51,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="social-links">
-            <p>Social Media Links:
+            <p>Social Links:
                 <!--LinkedIn-->
                 <a href="https://www.linkedin.com/in/daniella-boulos/" target="_blank"><i class="fa fa-linkedin"></i></a>
                 <!--Github-->
