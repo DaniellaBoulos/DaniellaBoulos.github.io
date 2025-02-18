@@ -349,7 +349,7 @@ h2 {
 .resume-container {
   width: 60vw; /* makes it wider based on viewport */
   max-width: 90vw;
-  height: 85vh; /* use most of screen height */
+  height: 60rem; /* use most of screen height */
   margin: 1rem auto;
   background: #f3e3e2;
   padding: 1rem;
@@ -358,10 +358,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 iframe {
   width: 100%;
-  height: 100%; /* ensures it fills container */
   border: none;
   display: block;
 }
