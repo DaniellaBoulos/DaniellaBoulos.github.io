@@ -349,10 +349,10 @@ h2 {
 .resume-container {
   width: 60vw; /* makes it wider based on viewport */
   max-width: 90vw;
-  height: 60rem; /* use most of screen height */
-  margin: 1rem auto;
+  height: 63rem; 
+  margin: 1.5rem auto;
   background: #f3e3e2;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: -5px 5px 5px;
   border: 3px solid #0c0c1e;
   display: flex;
@@ -364,33 +364,8 @@ iframe {
   width: 100%;
   border: none;
   display: block;
-}
-/* Skills Page CSS */
-#skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* creates responsive columns */
-  gap: 2rem; /* Adds space between projects */
-  justify-content: space-evenly;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-.multi-column-list ul {
-  column-count: 2; /* Number of columns */
-  column-gap: 1rem; /* Space between columns */
-  list-style-position: inside; /* Keeps list style markers inside the column */
-}
-
-.multi-column-list li {
-  margin-bottom: 0.25rem;
-}
-
-#skills h2 {
-  padding-bottom: 1rem;
-}
-
-#skills li {
-  margin-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* Mac Malware Detection Page CSS */
