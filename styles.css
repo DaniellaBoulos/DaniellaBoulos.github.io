@@ -156,6 +156,29 @@ body {
   #projects, .autumn, .about, #skills {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
+
+  .resume-container {
+    width: 30vw; /* makes it wider based on viewport */
+    max-width: 60vw;
+    height: 30rem; 
+    margin: 1rem auto;
+    background: #f3e3e2;
+    padding: 1rem;
+    box-shadow: -5px 5px 5px;
+    border: 3px solid #0c0c1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  iframe {
+    width: 80%;
+    border: none;
+    display: block;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -196,6 +219,29 @@ body {
 
   #projects, .autumn, .about, #skills {
     grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .resume-container {
+    width: 20vw; /* makes it wider based on viewport */
+    max-width: 50vw;
+    height: 20rem; 
+    margin: .5rem auto;
+    background: #f3e3e2;
+    padding: .5rem;
+    box-shadow: -5px 5px 5px;
+    border: 3px solid #0c0c1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  iframe {
+    width: 50%;
+    border: none;
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
   }
 }
 
@@ -360,6 +406,7 @@ h2 {
   align-items: center;
   overflow: hidden;
 }
+
 iframe {
   width: 100%;
   border: none;
