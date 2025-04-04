@@ -133,15 +133,14 @@ body {
     padding: 0 1rem;
   }
 
-  .header-row a {
-    width: 8%; /* Increase logo size slightly */
+  .header-row a img{
+    width: 3.75rem; /* 60px */
     left: 0.5rem; /* Adjust spacing for smaller screens */
   }
 
   .header-row h1 {
     font-size: 3rem; /* Reduce title font size */
     margin-left: 2rem; /* Space between logo and title */
-    text-align: left; /* Align text to the left */
   }
 
   footer, .col-6 {
@@ -155,11 +154,12 @@ body {
 
   #projects, .autumn, .about, #skills {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    text-align: center;
   }
 
-  .resume-container {
-    width: 30vw; /* makes it wider based on viewport */
+  .resume-container iframe {
+    height: 18.75rem;
+    /*
+    width: 30vw; * makes it wider based on viewport* 
     max-width: 60vw;
     height: 30rem; 
     margin: 1rem auto;
@@ -171,8 +171,9 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    */
   }
-
+  /*
   iframe {
     width: 55%;
     border: none;
@@ -180,6 +181,7 @@ body {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
+  */
 }
 
 @media screen and (max-width: 480px) {
@@ -206,25 +208,30 @@ body {
     padding: 1rem; /* Reduce padding */
   }
 
-  .header-row a {
-    position: static; /* Remove absolute positioning for easier stacking */
-    margin-bottom: 1rem; /* Space below the logo */
-    width: 10%; /* Make logo larger for small screens */
+  .header-row a img{
+    width: 3.125rem; /* 50px */
+    margin-bottom: 1rem;
+    /*
+    position: static; * Remove absolute positioning for easier stacking *
+    margin-bottom: 1rem; * Space below the logo *
+    width: 10%; * Make logo larger for small screens *
+    */
   }
 
   .header-row h1 {
-    font-size: 2.5rem; /* Reduce title size for small screens */
+    font-size: 1.25rem; /* Reduce title size for small screens */
     margin: 0; /* Remove extra spacing */
     text-align: center; /* Center-align text */
   }
 
   #projects, .autumn, .about, #skills {
     grid-template-columns: 1fr; /* Single column layout */
-    text-align: center;
   }
 
-  .resume-container {
-    width: 20vw; /* makes it wider based on viewport */
+  .resume-container iframe{
+    height: 15.625rem; /* 250px */
+    /*
+    width: 20vw; * makes it wider based on viewport *
     max-width: 50vw;
     height: 20rem; 
     margin: .5rem auto;
@@ -236,8 +243,9 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    */
   }
-
+  /*
   iframe {
     width: 30%;
     border: none;
@@ -245,6 +253,7 @@ body {
     padding-top: .5rem;
     padding-bottom: .5rem;
   }
+  */
 }
 
 /* Home page CSS */
