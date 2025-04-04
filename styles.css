@@ -155,6 +155,7 @@ body {
 
   #projects, .autumn, .about, #skills {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    text-align: center;
   }
 
   .resume-container {
@@ -173,7 +174,7 @@ body {
   }
 
   iframe {
-    width: 80%;
+    width: 55%;
     border: none;
     display: block;
     padding-top: 1.25rem;
@@ -219,6 +220,7 @@ body {
 
   #projects, .autumn, .about, #skills {
     grid-template-columns: 1fr; /* Single column layout */
+    text-align: center;
   }
 
   .resume-container {
@@ -237,7 +239,7 @@ body {
   }
 
   iframe {
-    width: 50%;
+    width: 30%;
     border: none;
     display: block;
     padding-top: .5rem;
