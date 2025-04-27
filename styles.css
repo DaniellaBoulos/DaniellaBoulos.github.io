@@ -139,7 +139,7 @@ body {
   }
 
   .header-row h1 {
-    font-size: 3rem; /* Reduce title font size */
+    font-size: 5rem; /* Reduce title font size */
     margin-left: 2rem; /* Space between logo and title */
   }
 
@@ -154,6 +154,12 @@ body {
 
   #projects, .autumn, .about, #skills {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  #certificate {
+    width: 40%;
+    height: auto;
+    padding-top: 1rem;
   }
 
   .resume-container iframe {
@@ -219,13 +225,19 @@ body {
   }
 
   .header-row h1 {
-    font-size: 1.25rem; /* Reduce title size for small screens */
+    font-size: 2rem; /* Reduce title size for small screens */
     margin: 0; /* Remove extra spacing */
     text-align: center; /* Center-align text */
   }
 
   #projects, .autumn, .about, #skills {
     grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  #certificate {
+    width: 25%;
+    height: auto;
+    padding-top: 1rem;
   }
 
   .resume-container iframe{
@@ -402,6 +414,12 @@ h2 {
   margin: 1.75rem;
 }
 
+#certificate {
+  width: 65%;
+  height: auto;
+  padding-top: 1rem;
+}
+
 /*Resume Page CSS */
 .resume-container {
   width: 60vw; /* makes it wider based on viewport */
@@ -424,16 +442,4 @@ iframe {
   display: block;
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-/* Mac Malware Detection Page CSS */
-.construction {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.construction img {
-  width: 50%;
-  height: auto;
 }
