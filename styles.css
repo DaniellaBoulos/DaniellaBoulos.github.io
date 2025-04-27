@@ -139,7 +139,7 @@ body {
   }
 
   .header-row h1 {
-    font-size: 5rem; /* Reduce title font size */
+    font-size: 4.5rem; /* Reduce title font size */
     margin-left: 2rem; /* Space between logo and title */
   }
 
@@ -225,8 +225,8 @@ body {
   }
 
   .header-row h1 {
-    font-size: 2rem; /* Reduce title size for small screens */
-    margin: 0; /* Remove extra spacing */
+    font-size: 1.5rem; /* Reduce title size for small screens */
+    margin: 0.5; 
     text-align: center; /* Center-align text */
   }
 
@@ -235,7 +235,7 @@ body {
   }
 
   #certificate {
-    width: 25%;
+    width: 30%;
     height: auto;
     padding-top: 1rem;
   }
