@@ -162,32 +162,19 @@ body {
     padding-top: 1rem;
   }
 
-  .resume-container iframe {
-    height: 18.75rem;
-    /*
-    width: 30vw; * makes it wider based on viewport* 
-    max-width: 60vw;
-    height: 30rem; 
-    margin: 1rem auto;
-    background: #f3e3e2;
+  .download {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .resume-container {
+    width: 90%;
     padding: 1rem;
-    box-shadow: -5px 5px 5px;
-    border: 3px solid #0c0c1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    */
   }
-  /*
-  iframe {
-    width: 55%;
-    border: none;
-    display: block;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+  
+  .resume-embed {
+    height: 30rem;
   }
-  */
 }
 
 @media screen and (max-width: 480px) {
@@ -217,11 +204,6 @@ body {
   .header-row a img{
     width: 3.125rem; /* 50px */
     margin-bottom: 1rem;
-    /*
-    position: static; * Remove absolute positioning for easier stacking *
-    margin-bottom: 1rem; * Space below the logo *
-    width: 10%; * Make logo larger for small screens *
-    */
   }
 
   .header-row h1 {
@@ -240,32 +222,24 @@ body {
     padding-top: 1rem;
   }
 
-  .resume-container iframe{
-    height: 15.625rem; /* 250px */
-    /*
-    width: 20vw; * makes it wider based on viewport *
-    max-width: 50vw;
-    height: 20rem; 
-    margin: .5rem auto;
-    background: #f3e3e2;
-    padding: .5rem;
-    box-shadow: -5px 5px 5px;
-    border: 3px solid #0c0c1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    */
+  .download {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.6rem;
   }
-  /*
-  iframe {
-    width: 30%;
-    border: none;
-    display: block;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+
+  .resume-container {
+    width: 90%;
+    padding: 1rem;
   }
-  */
+  
+  .resume-embed {
+    height: 20rem;
+  }
+
+  .download-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
 }
 
 /* Home page CSS */
@@ -422,24 +396,55 @@ h2 {
 
 /*Resume Page CSS */
 .resume-container {
-  width: 60vw; /* makes it wider based on viewport */
-  max-width: 90vw;
-  height: 63rem; 
-  margin: 1.5rem auto;
-  background: #f3e3e2;
-  padding: 1.5rem;
-  box-shadow: -5px 5px 5px;
-  border: 3px solid #0c0c1e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    border: 3px solid #0c0c1e;
+    background-color: #f3e3e2;
+    box-shadow: -5px 5px 5px;
+    width: 55rem;
+    max-width: 80rem;
+    height: auto;
 }
 
-iframe {
-  width: 100%;
-  border: none;
-  display: block;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.resume {
+    width: 100%;
+    height: 50rem;
+    margin-bottom: 1.5rem;
+}
+
+.resume embed {
+    width: 80%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.download-button-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #4b0000;
+    color: #f3e3e2;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: 3px solid #0c0c1e;
+}
+
+.download-button:hover {
+    background-color: #0c0c1e;
+    color: #f3e3e2;
+    border: 3px solid #4b0000;
+}
+
+.download-button i {
+    margin-right: 0.5rem;
 }
