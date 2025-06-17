@@ -135,12 +135,12 @@ body {
 
   .header-row a img{
     width: 3.75rem; /* 60px */
-    left: 0.5rem; /* Adjust spacing for smaller screens */
+    left: 0.25rem; /* Adjust spacing for smaller screens */
   }
 
   .header-row h1 {
-    font-size: 4.5rem; /* Reduce title font size */
-    margin-left: 2rem; /* Space between logo and title */
+    font-size: 4rem; /* Reduce title font size */
+    margin-left: 1.5rem; /* Space between logo and title */
   }
 
   footer, .col-6 {
@@ -169,11 +169,17 @@ body {
 
   .resume-container {
     width: 90%;
-    padding: 1rem;
+    padding: 0.5rem;
+    margin: 0.75rem auto;
   }
   
-  .resume-embed {
-    height: 30rem;
+  .resume {
+    height: 50rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .download-button-container {
+    margin-top: 0.25rem;
   }
 }
 
@@ -208,7 +214,7 @@ body {
 
   .header-row h1 {
     font-size: 1.5rem; /* Reduce title size for small screens */
-    margin: 0.5; 
+    margin: 0.5rem; 
     text-align: center; /* Center-align text */
   }
 
@@ -228,12 +234,18 @@ body {
   }
 
   .resume-container {
-    width: 90%;
-    padding: 1rem;
+    width: 95%;
+    padding: 0.25rem;
+    margin: 0.5rem auto;
   }
   
-  .resume-embed {
-    height: 20rem;
+  .resume {
+    height: 40rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .download-button-container {
+    margin-top: 0.25rem;
   }
 
   .download-button {
@@ -399,32 +411,32 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.5rem auto;
-    padding: 1.5rem;
+    margin: 1rem auto;
+    padding: 1rem;
     border: 3px solid #0c0c1e;
     background-color: #f3e3e2;
     box-shadow: -5px 5px 5px;
-    width: 55rem;
-    max-width: 80rem;
+    width: 100%;
+    max-width: 61rem;
     height: auto;
 }
 
 .resume {
     width: 100%;
-    height: 50rem;
-    margin-bottom: 1.5rem;
+    height: 60rem;
+    margin-bottom: 0.5rem;
 }
 
 .resume embed {
-    width: 80%;
+    width: 100%;
     height: 100%;
     border: none;
     display: block;
 }
 
 .download-button-container {
-    margin-top: 1rem;
     text-align: center;
+    margin-top: 0.5rem;
 }
 
 .download-button {

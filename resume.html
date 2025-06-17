@@ -27,33 +27,14 @@
 
     <div class="resume-container">
         <div class="resume">
-            <embed src="projectpages/Daniella Resume.html"></embed>
+            <embed src="projectpages/DBoulos_Resume.html"></embed>
         </div>
         <div class="download-button-container">
-            <a href="projectpages/Daniella Resume.docx" download class="download-button">
+            <a href="projectpages/DBoulos_Resume.docx" download class="download-button">
                 <i class="fa fa-download"></i> Download Resume
             </a>
         </div>
     </div>
-
-    <script>
-        function adjustPDFHeight() {
-            let rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize); // Get root font size in px
-            let newHeightRem = (window.innerHeight * 0.8) / rootFontSize; // Convert px to rem: 80% of viewport height
-            let minHeightRem = 25; // Minimum height in rem
-            document.getElementById("resume").style.height = Math.max(newHeightRem, minHeightRem) + "rem";
-            let container = document.querySelector(".resume-container");
-            let iframe = document.getElementById("resume");
-        
-            let pdfAspectRatio = 1.414; // Standard A4 aspect ratio (height/width)
-
-            // Set height based on width to maintain aspect ratio
-            iframe.style.height = (container.clientWidth * pdfAspectRatio) + "px";
-        }
-
-        window.onload = adjustPDFHeight;
-        window.onresize = adjustPDFHeight;
-    </script>
 
     <!-- Footer -->
     <footer class="footer">
