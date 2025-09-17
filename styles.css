@@ -181,6 +181,10 @@ body {
   .download-button-container {
     margin-top: 0.25rem;
   }
+
+  .description {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -251,6 +255,10 @@ body {
   .download-button {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.5rem;
   }
 }
 
@@ -404,6 +412,10 @@ h2 {
   width: 65%;
   height: auto;
   padding-top: 1rem;
+}
+
+.description {
+  font-size: 1.25rem;
 }
 
 /*Resume Page CSS */
