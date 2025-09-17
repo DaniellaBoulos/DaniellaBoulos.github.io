@@ -182,9 +182,6 @@ body {
     margin-top: 0.25rem;
   }
 
-  .description {
-    font-size: 0.5rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -258,8 +255,9 @@ body {
   }
 
   .description {
-    font-size: 0.25rem;
+    font-size: 0.8rem;
   }
+
 }
 
 /* Home page CSS */
@@ -412,10 +410,6 @@ h2 {
   width: 65%;
   height: auto;
   padding-top: 1rem;
-}
-
-.description {
-  font-size: 1.25rem;
 }
 
 /*Resume Page CSS */
